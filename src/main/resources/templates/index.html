@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/getShortUrl" method="post">
+    长链接: <input type="text" name="longUrl" /><br>
+    自定义短链接: <input type="text" name="shortUrl" /><br>
+    短链接长度：<input id="shuzi" type="number" name="number" /><br>
+    key：<input type="text" name="key" /><br>
+    字符集：
+    所有字符<input type="radio" name="type" value="CHARS">
+    数字<input type="radio" name="type" value="DIGITAL">
+    小写字母<input type="radio" name="type" value="SMALLALPHABET">
+    大写字母<input type="radio" name="type" value="BIGALPHABET">
+    大小写字母<input type="radio" name="type" value="ALPHABET"><br>
+    <input type="submit" value="Submit" />
+</form>
+<br>
+<br>
+<form action="/accessCount" method="get">
+    访问次数：<br>
+    短链接：<input type="text" name="shortUrl" /><br>
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
